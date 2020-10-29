@@ -1,0 +1,15 @@
+version: "3.0"
+services:
+        static:
+                build: static
+                hostname: 'static'
+                ports:
+                - "8020:80"
+                restart: 'always'
+                depends_on:
+                        - readfile
+        readfile:
+                build: readfile
+                hostname: 'readfile'
+                restart: 'always'
+
