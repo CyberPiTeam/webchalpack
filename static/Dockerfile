@@ -10,7 +10,7 @@ RUN mkdir -p /var/www/html
 
 COPY default.conf /etc/nginx/nginx.conf
 
-RUN echo "epic" >  /var/www/html/index.html
+COPY index.html  /var/www/html/index.html
 
 EXPOSE 80
 
