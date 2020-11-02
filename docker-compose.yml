@@ -9,6 +9,8 @@ services:
                 depends_on:
                         - readfile
                         - hiddenform
+                        - cookiechal
+                        - pingapp
         readfile:
                 build: readfile
                 hostname: 'readfile'
