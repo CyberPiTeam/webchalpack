@@ -4,7 +4,7 @@ services:
                 build: static
                 hostname: 'static'
                 ports:
-                - "8080:80"
+                - "80:80"
                 restart: 'always'
                 depends_on:
                         - readfile
