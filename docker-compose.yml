@@ -17,4 +17,8 @@ services:
                 build: hiddenform
                 hostname: 'hiddenform'
                 restart: 'always'
+        cookiechal:
+                build: cookiechal
+                hostname: 'cookiechal'
+                restart: 'always'
 
