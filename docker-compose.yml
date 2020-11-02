@@ -4,12 +4,17 @@ services:
                 build: static
                 hostname: 'static'
                 ports:
-                - "8020:80"
+                - "8080:80"
                 restart: 'always'
                 depends_on:
                         - readfile
+                        - hiddenform
         readfile:
                 build: readfile
                 hostname: 'readfile'
+                restart: 'always'
+        hiddenform:
+                build: hiddenform
+                hostname: 'hiddenform'
                 restart: 'always'
 

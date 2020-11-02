@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>
+			Secure Flag Request
+		</title>
+		<style>
+			body{
+				background-color:black;
+				color:white;
+				font-family:arial;
+			}
+			input{
+				background-color:black;
+				color:white;
+				width:400px;
+				height:40px;
+				font-size:16px;
+			}
+			p{
+				color:red;
+				font-size:14px;
+			}
+		
+		</style>
+	</head>
+	<body>
+		<center>
+		<h1>Secure Flag Request System</h1>
+		<p><!----></p>
+		<form method="GET" action="/flag">
+			<input name="isAdmin" value="0" hidden="true">
+			<input name="reason" placeholder="Request Reason"><br>
+			<input name="name" placeholder="Requester Name"><br>
+			<input type="submit">
+		</form>	
+		</center>
+
+	</body>
+
+</html>
