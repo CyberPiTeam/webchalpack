@@ -21,4 +21,8 @@ services:
                 build: cookiechal
                 hostname: 'cookiechal'
                 restart: 'always'
+        pingapp:
+                build: pingapp
+                hostname: 'pingapp'
+                restart: 'always'
 
