@@ -5,8 +5,13 @@ body {
     text-align: center;
     font-size: 50px;
     color: white;
-    overflow: hidden;
 }
+
+/*Ping result text*/
+.results{
+	font-size:16px;
+}
+
 
 /* PING PONG TABLE */
 #ping {
