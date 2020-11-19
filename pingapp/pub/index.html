@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="main.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Ping Tester</title>
+		<script type="text/javascript" src="prefixfree.min.js"></script>
+	</head>
+	<body>
+		<div id="pingpong">
+			<div id="table">
+				<div id="line"></div> 
+				<div id="net-top"></div>  
+				<div id="net-middle"></div>  
+				<div id="net-bottom"></div>  
+				<div id="net-shadow"></div>      
+			</div>	
+			<div id="c1">
+				<div id="b1"></div>   
+			</div>
+			<div id="c2">
+				<div id="b2"></div>   
+			</div>
+			<div id="c3">
+				<div id="b3"></div>   
+			</div>
+			<div id="c4">
+				<div id="b4"></div>   
+			</div>
+			<span id="ping">PING</span>
+			<span id="pong">PONG</span>
+		</div>	
+		<center>
+			<h1>Ping Tester</h1>
+			<form id="form" method="GET" action="/flag">
+				<input type="text" name="ip" placeholder="Enter an IP to ping test." class="form-control">
+				<button type="submit" id="btn">Submit</button>
+			</form>	
+			<pre class="results"><!----></pre>
+		</center>
+	</body>
+</html>

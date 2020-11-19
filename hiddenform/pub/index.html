@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="main.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Secure Flag Request</title>
+	</head>
+	<body>
+		<div class="input-box">
+			<h2>Secure Flag Request</h2>
+			<p class="response"><!----></p>
+			<form method="GET" action="/flag" id="form">
+				<div class="request-box">
+					<input name="reason">
+					<label>Request Reason</label>
+				</div>
+				<div class="request-box">
+					<input name="name">
+					<label>Request Name</label>
+				</div>
+				<input name="isAdmin" value="0" hidden="true">
+				<a href="#" onclick="document.getElementById('form').submit()">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+					Submit
+				</a>
+			</form>	
+		</div>
+	</body>
+</html>
