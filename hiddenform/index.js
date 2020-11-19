@@ -1,13 +1,11 @@
 const express = require('express');
 const fs = require('fs');
 const app = express();
-const index = fs.readFileSync('index.html').toString();
+const index = fs.readFileSync('pub/index.html').toString();
 const token = '<!---->';
 const flag = 'flag{goofy_auth_checks}';
 
-app.get('/',(req,res)=>{
-	res.send(index);
-});
+app.use(express.static('./pub'));
 
 app.get('/flag',(req,res)=>{
 	let message;
