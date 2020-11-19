@@ -1,3 +1,4 @@
+/* WEBPAGE */
 body {
   place-content: center;
   height: 100vh;
@@ -23,6 +24,7 @@ body h1::before {
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* ANIMATION KEYFRAMES */
 @-webkit-keyframes text {
   8.33333% {
     content: "Welcome";
